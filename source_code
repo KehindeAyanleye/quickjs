@@ -1,0 +1,7 @@
+alert('hello!');
+
+document.querySelector('html').style.backgroundColor = 'purple';
+
+var myImage = document.createElement('img');
+myImage.setAttribute('src','https://farm4.staticflickr.com/3455/3372925208_e1f2aae4e3_b.jpg');
+document.querySelector('h1').appendChild(myImage);
