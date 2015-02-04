@@ -19,3 +19,57 @@ document.querySelector('html').style.backgroundColor = 'purple';
 var myImage = document.createElement('img');
 myImage.setAttribute('src','https://farm4.staticflickr.com/3455/3372925208_e1f2aae4e3_b.jpg');
 document.querySelector('h1').appendChild(myImage);
+
+var iceCream = 'chocolate';
+if (iceCream === 'chocolate'){
+alert('Yay, I love chocolate ice cream!');
+}else{alert('Awww, but choco choco');}
+
+
+function multiply(num1,num2) {
+var result = num1 * num2;
+return result;
+}
+
+
+document.querySelector('html').onclick = function() {
+alert('Ouch! Stop poking me!');
+}
+
+var myHTML = document.querySelector('html');
+myHTML.onclickc=cfunction() {};
+
+var myImage = document.querySelector('Img');
+
+myImage.onclick = function() {
+	var mySrc = myImage.getAttribute('src');
+	if(mySrc === 'images/firefox-icon.png'){
+	myImage.setAttribute ('src', 'images/barak_obama.png');
+	} else {
+	myImage.setAttribute ('src', 'images/firefox-icon.png');
+		}
+}
+
+
+
+
+
+
+
+var myButton = document.querySelector('button');
+var myHeading = document.querySelector('h1');
+
+function setUserName() {
+  var myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+}
+
+if(!localStorage.getItem('name')) {
+	setUserName();
+} else {
+	var storedName = localStorage.getItem('name');
+	myHeading.innerHTML = 'Who are you ' + storedName + '?';
+}
+
+myButton.onclick = setUserName;
